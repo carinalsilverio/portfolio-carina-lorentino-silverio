@@ -23,3 +23,13 @@
 //     conhecimentosP.style.display === 'block'
 //   }
 // })
+
+
+  // $('#lightSlider').lightSlider({
+  //   autoWidth: true,
+  //   loop: true,
+  //   onSliderLoad: function () {
+  //     $('#lightSlider').removeClass('cS-hidden');
+  //   },
+  // });
+

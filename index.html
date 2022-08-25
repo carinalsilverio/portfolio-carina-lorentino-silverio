@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Carina Lorentino Silvério</title>
   <link rel="shortcut icon" href="src/img/icones/logo.ico">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Finlandica:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -44,8 +45,8 @@
         <h1>Sobre</h1>
       </div>
       <p>Olá! <br>
-        <br>Eu me chamo Carina, estou cursando o último período do curso de Análise e Desenvolvimento de Sistemas pela Universidade Estácio de Sá. <br>
-        <br>Sou programadora Front-end e tenho experiência em criação de páginas web. Estou constantemente criando páginas web, afim de aplicar meus conhecimentos e aprender cada vez mais com novos desafios. Além do desenvolvimento profissional, procuro me desenvolver no âmbito pessoal buscando sempre mais conhecimentos.
+        <br>Eu me chamo Carina, estou cursando o último período do curso de Análise e Desenvolvimento de Sistemas. <br>
+        <br>Sou programadora Front-end e tenho experiência em criação de páginas Web. Estou constantemente criando páginas web, afim de aplicar meus conhecimentos e aprender cada vez mais com novos desafios. Além do desenvolvimento profissional, procuro me desenvolver no âmbito pessoal buscando sempre mais conhecimentos.
       </p>
     </div>
   </main>
@@ -54,33 +55,27 @@
       <h1>Conhecimentos</h1>
     </div>
     <div class="conhecimentos container">
-      <div class="lista-conhecimentos cards-conhecimentos html">
-        <a href=""></a>
+      <div class="lista-conhecimentos cards-conhecimentos">       
         <img src="src/img/icones/html-5.png" width="80px" height="80px" alt="">
         <p class="conhecimentosP">HTML</p>
       </div>
-      <div class="lista-conhecimentos cards-conhecimentos css">
-        <a href=""></a>
+      <div class="lista-conhecimentos cards-conhecimentos">      
         <img src="src/img/icones/css.png" width="80" height="80" alt="">
         <p class="conhecimentosP">CSS</p>
       </div>
-      <div class="lista-conhecimentos cards-conhecimentos javascript">
-        <a href=""></a>
+      <div class="lista-conhecimentos cards-conhecimentos">       
         <img src="src/img/icones/js.png" width="80" height="80" alt="">
         <p class="conhecimentosP">JavaScript</p>
       </div>
-      <div class="lista-conhecimentos cards-conhecimentos bootstrap">
-        <a href=""></a>
+      <div class="lista-conhecimentos cards-conhecimentos">       
         <img src="src/img/icones/bootstrap.png" width="80" height="80" alt="">
         <p class="conhecimentosP">Bootstrap</p>
       </div>
-      <div class="lista-conhecimentos cards-conhecimentos git">
-        <a href=""></a>
+      <div class="lista-conhecimentos cards-conhecimentos">      
         <img src="src/img/icones/git.png" width="80" height="80" alt="">
         <p class="conhecimentosP">Git</p>
       </div>
-      <div class="lista-conhecimentos cards-conhecimentos github">
-        <a href=""></a>
+      <div class="lista-conhecimentos cards-conhecimentos">      
         <img src="src/img/icones/github.png" width="80" height="80" alt="">
         <p class="conhecimentosP">GitHub</p>
       </div>
@@ -92,56 +87,58 @@
       <div class="fonte-titulo">
         <h1>Projetos</h1>
       </div>
+      <button class="arrow-left control" aria-label="Previous image">◀</button>
+    <button class="arrow-right control" aria-label="Next Image">▶</button>
       <div class="projetos" id="intro">
-        <div class="cards-projetos cards">
+        <div class="cards-projetos cards cS-hidden" id="lightSlider">
           <h2>Animais Fantásticos</h2>
           <img src="src/img/animais-fantasticos.jpg" width="230px" height="230px" alt="">
           <link rel="stylesheet" href=" https://carinalsilverio.github.io/animais-fantasticos/">
           <p>Projeto Realizado através da plataforma Origamid</p>
         </div>
-        <div class="cards-projetos cards">
+        <div class="cards-projetos cards cS-hidden" id="lightSlider">
           <h2>Bikraft</h2>
           <img src="src/img/bikcraft.jpg" width="230px" height="230px" alt="">
           <link rel="stylesheet" href=" https://carinalsilverio.github.io/bikraft/">
           <p>Projeto Realizado através da plataforma Origamid</p>
         </div>
-        <div class="cards-projetos cards">
+        <div class="cards-projetos cards cS-hidden" id="lightSlider">
           <h2>Calculadora</h2>
           <img src="src/img/calc.jpg" width="230px" height="230px" alt="">
           <link rel="stylesheet" href=" https://carinalsilverio.github.io/calculadora/">
           <p>Projeto Pessoal</p>
         </div>
-        <div class="cards-projetos cards">
+        <div class="cards-projetos cards cS-hidden" id="lightSlider">
           <h2>Fruto e Fruta</h2>
           <img src="src/img/fruta_e_fruto.jpg" width="230px" height="230px" alt="">
           <link rel="stylesheet" href=" https://carinalsilverio.github.io/youtube-clone/">
           <p>Projeto Realizado através da plataforma Alura</p>
         </div>
-        <div class="cards-projetos cards">
+        <div class="cards-projetos cards cS-hidden" id="lightSlider">
           <h2>Cronômetro</h2>
           <img src="src/img/cronometro.jpg" width="230px" height="230px" alt="">
           <link rel="stylesheet" href="https://carinalsilverio.github.io/cronometro/">
           <p>Projeto Pessoal</p>
         </div>
-        <div class="cards-projetos cards">
+        <div class="cards-projetos cards cS-hidden" id="autoWidth">
           <h2>Burger King - Clone</h2>
           <img src="src/img/bk.jpg" width="230px" height="230px" alt="">
           <link rel="stylesheet" href="https://carinalsilverio.github.io/formulario/">
           <p>Projeto Realizado através da plataforma Kenzie</p>
         </div>
-        <div class="cards-projetos cards">
+        <div class="cards-projetos cards cS-hidden" id="autoWidth">
           <h2>Tecme - Clone</h2>
           <img src="src/img/tecme.png" width="230px" height="230px" alt="">
           <link rel="stylesheet" href="https://carinalsilverio.github.io/tecme-clone/">
           <p>Projeto Pessoal</p>
         </div>
-        <div class="cards-projetos cards">
+        <div class="cards-projetos cards cS-hidden" id="autoWidth">
           <h2>Seletor de Personagens</h2>
           <img src="src/img/seletor_personagens.jpg" width="230px" height="230px" alt="">
           <link rel="stylesheet" href="https://carinalsilverio.github.io/qconcursos-clone/">
           <p>Projeto Pessoal</p>
         </div>
-        <div class="cards-projetos cards">
+        <div class="cards-projetos cards cS-hidden" id="autoWidth">
           <h2>Fábio Santos Advocacia Jurídica</h2>
           <img src="src/img/fs-advocacia.jpg" width="230px" height="230px" alt="fs-advocacia">
           <link rel="stylesheet" href="https://carinalsilverio.github.io/fabiosantosadvocacia//">
@@ -189,15 +186,8 @@
     </div>
   </section>
   <script src="js/script.js"></script>
-  <script src="js/vanilla-tilt.js"></script>
-  <script>
-    VanillaTilt.init(document.querySelectorAll(".lista-conhecimentos"), {
-      max: 25,
-      speed: 400,
-      glare: true,
-    });
-  </script>
-
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/lightslider.js"></script>
 </body>
 
 </html>
