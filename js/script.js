@@ -1,35 +1,34 @@
-// var glide = new Glide('#intro', {
-//   type: 'carousel',
-//   perView: 4,
-//   focusAt: 'center',
-//   breakpoints: {
-//     800: {
-//       perView: 2,
-//     },
-//     480: {
-//       perView: 1,
-//     },
-//   },
-// });
-
-// glide;
-
-// var exibirP = document.querySelector(".btn")
-
-// exibirP.addEventListener('click', function(){
-//   if(exibirP.style.display === 'block') {
-//     exibirP.style.display === 'none'
-//   }else {
-//     conhecimentosP.style.display === 'block'
-//   }
-// })
-
-
-  // $('#lightSlider').lightSlider({
-  //   autoWidth: true,
-  //   loop: true,
-  //   onSliderLoad: function () {
-  //     $('#lightSlider').removeClass('cS-hidden');
-  //   },
-  // });
-
+const controls = document.querySelectorAll('.control');
+  let currentItem = 0;
+  const items = document.querySelectorAll('.item');
+  const maxItems = items.length;
+  
+  controls.forEach((control) => {
+    control.addEventListener('click', (e) => {
+      isLeft = e.target.classList.contains('arrow-left');
+  
+      if (isLeft) {
+        currentItem -= 1;
+      } else {
+        currentItem += 1;
+      }
+  
+      if (currentItem >= maxItems) {
+        currentItem = 0;
+      }
+  
+      if (currentItem < 0) {
+        currentItem = maxItems - 1;
+      }
+  
+      items.forEach((item) => item.classList.remove('current-item'));
+  
+      items[currentItem].scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+      });
+  
+      items[currentItem].classList.add('current-item');
+    });
+  });
+  

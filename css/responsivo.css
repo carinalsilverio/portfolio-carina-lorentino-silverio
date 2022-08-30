@@ -3,6 +3,10 @@
     height: 25rem;
     margin-top: 8rem;
 }
+.contato-direto, .icones-redes-sociais {  
+  display: flex;
+ 
+}
 
 }
 
