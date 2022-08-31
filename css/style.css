@@ -114,12 +114,20 @@ background-color: rgb(10, 10, 10);
 }
 
 /*SOBRE*/
+.foto-perfil {
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin-top: 10rem;   
+  box-shadow: 5px 8px 8px #000;
+}
+
 .principal {
 	display: flex;
   -webkit-box-pack: center;
   justify-content: center;
   padding: 0px 1.5rem;   
-  margin-top: -2rem;
+  margin-top: -2rem;  
   width: 100%;    
 	color: #000;		
 }
@@ -128,6 +136,7 @@ background-color: rgb(10, 10, 10);
 	max-width: 50rem;
 	margin-top: 1.5rem;
   margin-bottom: 4rem;
+  margin-left: 12rem;
 	text-align: left;
 	font-weight: 200;
 	font-size: 20px;
@@ -227,13 +236,12 @@ background-color: rgb(10, 10, 10);
 
 /*PROJETOS*/
 
-.projetos {
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; */
+.projetos { 
   width: 100%;  
-  position: relative;   
+  position: relative;
+  padding: 16px 16px 0;
+  max-width: 900px;
+  margin: 0 auto;
   }
 
 .cards-projetos {
@@ -262,12 +270,6 @@ background-color: rgb(10, 10, 10);
   margin-bottom: 0.5rem;
   }
 
-/* .cards-projetos:hover {
-  transform: translateY(-5px);
-  transition: .2s;
-  background-color:rgb(228, 16, 93);
-  } */
-
 .cards-projetos:active {
   opacity: 0.5;
   transition: .2s;
@@ -289,8 +291,8 @@ background-color: rgb(10, 10, 10);
   width: 40px;
   color: #fff;
   transition: all 600ms ease-in-out;
-  background: linear-gradient(to left, transparent 0%,rgb(50, 33, 78) 80%);
-  opacity: 0.1;
+  background: linear-gradient(to left, transparent 0%, rgb(50, 33, 78) 200%);
+  opacity: 0.5;
   cursor: pointer;
   border: none;
 }
@@ -304,14 +306,13 @@ background-color: rgb(10, 10, 10);
   right: 0;
   left: auto;
   text-align: right;
-  background: linear-gradient(to right, transparent 0%, rgb(50, 33, 78) 80%);
+  background: linear-gradient(to right, transparent 0%, rgb(50, 33, 78) 200%);
 }
 
 .gallery {
   display: flex;
   flex-flow: row nowrap;
-  gap: 12px;
-  margin: 0 2rem;
+  gap: 15px;
 }
 
 .item {
@@ -319,11 +320,13 @@ background-color: rgb(10, 10, 10);
   height: 250px;
   flex-shrink: 0;
   transition: all 600ms ease-in-out;
-  opacity: 0.5;
+  opacity: 0.5;  
 }
 
 .current-item {
   opacity: 1;
+  border: 8px solid rgb(50, 33, 78);   
+  cursor: pointer;
 }
 
 /* This is from w3schools */
@@ -339,27 +342,6 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-.cyan {
-  background: cyan;
-}
-
-.deeppink {
-  background: deeppink;
-}
-
-.turquoise {
-  background: turquoise;
-}
-
-.darkblue {
-  background: darkblue;
-}
-
-.purple {
-  background: purple;
-}
-
 
 /*CONTATO*/
 
@@ -377,9 +359,9 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 
 .icones-contato-direto {
   margin: 0.5rem 0;   
-  cursor: pointer;    
+  cursor: pointer;      
   }
-
+  
 .icones-contato-direto:hover {
   transform: translateY(-2px);
   transition: .2s;
