@@ -75,9 +75,9 @@ p {
   justify-content: top;
 }
 
-/* svg {
-  max-width: 69.4rem;
-} */
+ svg {
+  max-height: 420px;
+} 
 
 /*Animação Scroll*/
 
@@ -138,19 +138,31 @@ p {
 /* nav {
   background-color: rgb(10, 10, 10); 
 } */
-
-.nav-bar ul  { 
-  margin-right: 4rem;   
-  z-index: 1;
+#header {
+  box-sizing: border-box;
+  height: 140px;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
 }
 
-.nav-bar ul li {
-  display: inline
+#logo {  
+  margin: 4rem 0 4rem 2rem;
+  display: block;  
 }
 
-.nav-bar ul li a {   
-  display: inline-block;
-  float: right;
+#menu  { 
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  margin: 2rem;
+}
+
+#menu li a {
+  display: block;
+	text-decoration: none;
   padding: 20px;
   color: rgb(255, 255, 255);
   font-weight: 800;
@@ -160,14 +172,18 @@ p {
   transition: background .4s;
 }
 
-.nav-bar ul li a:hover {
+#menu li {
+  display: inline
+}
+
+#menu li a:hover {
   background-image: 
   radial-gradient(at 47% 33%, hsl(271.91, 99%, 54%) 0, transparent 90%), 
   radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 90%);
   border-radius: 2px;
 }
 
-.nav-bar ul li a:active {
+#menu li a:active {
   opacity: 0.5;
 }
 

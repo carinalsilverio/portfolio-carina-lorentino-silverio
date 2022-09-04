@@ -1,4 +1,10 @@
 @media (max-width: 600px){
+  .logo {
+    padding: 2.5rem 0 2rem 3rem;
+    width: 100px;
+    margin-left: -16rem;
+  }
+
   svg {     
     max-width: 25.3rem;
   }
