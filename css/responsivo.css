@@ -136,7 +136,11 @@
 }
 
 
-
+@media (max-width: 360px){
+  #nav.active #menu {
+    height: calc(50vh - 70px);
+  }
+}
 
 
 
