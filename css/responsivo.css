@@ -1,38 +1,35 @@
 @media (max-width: 600px){
   .logo {
     padding: 2.5rem 0 2rem 3rem;
-    width: 100px;
+    width: 40px;
+    height: 40px;
     margin-left: -16rem;
   }
-
   svg {     
-    max-width: 25.3rem;
+    max-width: 24.3rem;
   }
-
+  .foto-perfil {
+    border-radius: 50%;
+    display: flex;
+    margin: 6rem auto 0; 
+    position: relative; 
+    width: 130px;
+    height: 130px; 
+  }
   .separador {
     height: 42rem;
-    margin-top: 5rem;
-    
+    margin-top: 5rem;    
 }
-.contato-direto, .icones-redes-sociais {  
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;  
+.conhecimentos img {
+  width: 60px;
+  height: 60px;
 }
-
+.cards-conhecimentos {  
+  width: 6rem;
+  height: 6rem;
+}
 .gallery {
   margin:0 50rem 0 0;
-}
-.foto-perfil {
-  border-radius: 50%;
-  display: flex;
-  margin: 6rem auto 0;
- 
-  position: relative;
- 
-  width: 130px;
-  height: 130px; 
 }
 .principal p {	
   margin-left: 0rem;	
@@ -49,7 +46,6 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 #header {
   box-sizing: border-box;
   height: 130px;
@@ -57,22 +53,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
-
 #menu {
-  display: flex;
-  list-style: none;
-  gap: 0.5rem;
-}
-
-#btn-mobile {
-  display: none;
-  color: #ffffff;
-}
-
-  #menu {
     display: block;
+    list-style: none;
+    gap: 0.5rem;
     position: absolute;
     width: 100%;
     top: 70px;
@@ -89,14 +74,12 @@
     overflow-y: auto;
     background: rgb(21, 22, 27);       
   }
-
   .nav-bar ul{
     margin-right: 2rem;
   }
   .nav-bar ul li a {    
     float: none;        
   }
-
   #menu a {
     display: block;   
     padding: 1rem 0;   
@@ -113,11 +96,12 @@
     background: none;
     cursor: pointer;
     gap: 0.5rem;
+    color: #ffffff;
   }
   #hamburger {
     border-top: 2px solid;
     width: 20px;
-  }
+  }  
   #hamburger::after,
   #hamburger::before {
     content: '';
@@ -139,10 +123,16 @@
     transform: rotate(-135deg);
     top: -7px;
   }
+  .contato-direto, .icones-redes-sociais {  
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;  
+  }
 }
 
-
 @media (max-width: 360px){
+  /*MENU*/
   #nav.active #menu {
     height: calc(50vh - 70px);
   }
