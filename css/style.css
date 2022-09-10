@@ -191,6 +191,14 @@ header {
   display: none
 }
 
+/*DIVISOR - INICIAL*/
+.span-divisor-inicial {
+  clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px)); 
+  clip-path: polygon(0 0,100% 41px,100% 100%,0 100%);
+
+  border-bottom: 40px solid rgb(50, 33, 78) ;
+}
+
 /*SOBRE*/
 .foto-perfil {
   border-radius: 50%;
@@ -322,7 +330,7 @@ header {
 .projetos { 
   position: relative;
   padding: 15px;
-  max-width: 640px;
+  max-width: 70%;
   margin: 0 auto;
   cursor: pointer;  
   }
@@ -334,8 +342,7 @@ header {
 .arrow-left,
 .arrow-right {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; 
   right: auto;
   bottom: 0;
   font-size: 20px;
@@ -353,9 +360,13 @@ header {
 .arrow-right:hover {
   opacity: 1;
 }
+.arrow-left {
+  left: -1rem;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
 
 .arrow-right {
-  right: 0;
+  right: -1rem;
   left: auto;
   text-align: right;
   background: linear-gradient(to right, transparent 0%, black 200%);
@@ -392,6 +403,15 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 .gallery-wrapper {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+/*DIVISOR - FINAL*/
+.span-divisor-final {
+  clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
+ 
+  clip-path: polygon(0 0,100% 41px,100% 100%,0 100%);
+  margin-top: 2rem;
+ 
+ border-bottom: 40px solid rgb(50, 33, 78) ;
 }
 
 /*CONTATO*/
@@ -434,3 +454,4 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   border-top: 1px solid rgb(87, 83, 100);
   justify-content:center;
   }
+
