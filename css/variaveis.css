@@ -1,0 +1,15 @@
+:root {
+  --cor-roxo-principal: rgb(50, 33, 78);
+  --cor-cinza-principal:rgb(21, 22, 27);
+  --cor-roxo-medio: radial-gradient(at 47% 33%, rgb(145, 22, 254) 0px, transparent 59%), radial-gradient(at 82% 65%, rgb(17, 25, 39) 0px, transparent 55%);
+  --cor-texto: #ffffff;
+  --cor-linear-gradient-colors:linear-gradient(to top, #008aff,#00ffe7);
+  --cor-divisor-secundario: rgba(255,255,255,0.05);
+  --cor-divisor-terciario: rgb(87, 83, 100);
+  --cor-gradient-roxo: radial-gradient(at 47% 33%, hsl(271.91, 99%, 54%) 0, transparent 90%), 
+  radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 90%);
+  --cor-preto-principal:#000;
+}
+
+
+

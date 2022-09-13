@@ -13,8 +13,8 @@ body {
 	/*max-width: 100rem;*/
 	margin: 0 auto;
 	padding: 0;		
-  background-color: rgb(21, 22, 27);
-  color: #fff;   
+  background-color: var( --cor-cinza-principal);
+  color: var( --cor-texto);   
 	font-size: 16px; 
   font-family: 'Finlandica', sans-serif !important; 
   width: 100%;
@@ -36,7 +36,7 @@ h1 {
 }
 
 p {
-  color:#ffffff;
+  color: var( --cor-texto);
 }
 #logo img {
 	width:80px;
@@ -51,7 +51,7 @@ p {
 	padding: 1.25rem;	
 	text-align: center;	
   margin: 2rem 0;
-  color: #ffffff;
+  color: var( --cor-texto);
 }
 
 .separador {
@@ -90,7 +90,7 @@ svg {
   right: 0; 
   width: 10px;
   height: 100%;
-  background: rgba(255,255,255,0.05)
+  background: var( --cor-divisor-secundario);
 }
 
 #progressbar {
@@ -99,7 +99,7 @@ svg {
   right: 0; 
   width: 10px;
   height: 100%;
-  background: linear-gradient(to top, #008aff,#00ffe6);
+  background: var( --cor-linear-gradient-colors);
   animation: animate 5s linear infinite;
 }
 @keyframes animate {
@@ -118,7 +118,7 @@ svg {
   left: 0;
   width:100%;
   height: 100%;
-  background: linear-gradient(to top, #008aff,#00ffe7);
+  background: var( --cor-linear-gradient-colors);
   filter: blur(30px);
 }
 
@@ -129,7 +129,7 @@ svg {
   left: 0;
   width:100%;
   height: 100%;
-  background: linear-gradient(to top, #008aff,#00ffe7);
+  background: var( --cor-linear-gradient-colors);
   filter: blur(30px);
 }
 
@@ -177,9 +177,7 @@ header {
 }
 
 #menu li a:hover {
-  background-image: 
-  radial-gradient(at 47% 33%, hsl(271.91, 99%, 54%) 0, transparent 90%), 
-  radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 90%);
+  background-image: var(--cor-gradient-roxo);
   border-radius: 2px;
 }
 
@@ -195,8 +193,7 @@ header {
 .span-divisor-inicial {
   clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px)); 
   clip-path: polygon(0 0,100% 41px,100% 100%,0 100%);
-
-  border-bottom: 40px solid rgb(50, 33, 78) ;
+  border-bottom: 40px solid var( --cor-roxo-principal) ;
 }
 
 /*SOBRE*/
@@ -205,7 +202,7 @@ header {
   display: block;
   position: absolute;
   margin-top: 10rem;   
-  box-shadow: 5px 8px 8px #000;
+  box-shadow: 5px 8px 8px var(--cor-preto-principal);
 }
 
 .principal {
@@ -215,7 +212,7 @@ header {
   padding: 0px 1.5rem;   
   margin-top: -2rem;  
   width: 100%;    
-	color: #000;		
+	color: var(--cor-preto-principal);		
 }
 
 .principal p {
@@ -233,7 +230,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
-  color:#000; 
+  color: var(--cor-preto-principal); 
   width: 100%;   
 	margin-top: 1.5rem;
   margin-bottom: 4rem;
@@ -243,8 +240,9 @@ header {
   
 }
 .cards-conhecimentos{
-  animation: flutuar 3s linear;  
+  animation: flutuar 3s linear infinite;  
 }
+
 @keyframes flutuar {
 
   0%,
@@ -315,7 +313,7 @@ header {
 .cards-conhecimentos:hover {
   transform: translateY(-5px);
   
-  }
+}
 
 .cards-conhecimentos:active {
   opacity: 0.5;
@@ -335,6 +333,18 @@ header {
   cursor: pointer;  
   }
 
+.projetos-cards h2   {
+  display: flex;
+  justify-content:center;  
+  padding-bottom: 0.5rem;
+  font-size: 18px;
+}
+.projetos-cards p   {
+  display: flex;
+  justify-content:center;  
+  padding-top: 0.5rem;
+}
+
 .gallery-wrapper {
   overflow-x: auto;
 }
@@ -348,7 +358,7 @@ header {
   font-size: 20px;
   line-height: 250px;
   width: 40px;
-  color: #fff;
+  color: var( --cor--texto);
   transition: all 600ms ease-in-out;
   background: linear-gradient(to left, transparent 0%, rgb(10, 10, 10) 200%);
   opacity: 0.1;
@@ -362,14 +372,14 @@ header {
 }
 .arrow-left {
   left: -1rem;
-  background: linear-gradient(to right, transparent 0%, black 200%);
+  background: linear-gradient(to right, transparent 0%,var(--cor-preto-principal) 200%);
 }
 
 .arrow-right {
   right: -1rem;
   left: auto;
   text-align: right;
-  background: linear-gradient(to right, transparent 0%, black 200%);
+  background: linear-gradient(to right, transparent 0%, var(--cor-preto-principal) 200%);
 }
 
 .gallery {
@@ -388,7 +398,7 @@ header {
 
 .current-item {
   opacity: 1;
-  border: 4px solid rgb(50, 33, 78);
+  border: 4px solid var( --cor-roxo-principal);
 }
 
 /* This is from w3schools */
@@ -406,12 +416,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 }
 /*DIVISOR - FINAL*/
 .span-divisor-final {
-  clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
- 
+  clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px)); 
   clip-path: polygon(0 0,100% 41px,100% 100%,0 100%);
-  margin-top: 2rem;
- 
- border-bottom: 40px solid rgb(50, 33, 78) ;
+  margin-top: 2rem; 
+  border-bottom: 40px solid var( --cor-roxo-principal) ;
 }
 
 /*CONTATO*/
@@ -448,10 +456,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   footer p { 
   display: flex;  
   height: 5rem;
-  color: #ffffff;
+  color: var(--cor-texto);
   margin-top: 2rem;
   padding: 2rem;
-  border-top: 1px solid rgb(87, 83, 100);
+  border-top: 1px solid var(  --cor-divisor-terciario);
   justify-content:center;
   }
 
