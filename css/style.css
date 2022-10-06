@@ -1,6 +1,4 @@
-*{
-  margin: 0 auto;
-  padding: 0 auto;
+*{  
   box-sizing: border-box;
 }
 
@@ -56,7 +54,7 @@ p {
 
 .separador {
   background-image: 
-  radial-gradient(at 47% 33%, hsl(271.91, 99%, 54%) 0, transparent 59%), 
+  radial-gradient(at 47% 33%, hsl(271.91, 99%, 54%) 0, transparent 80%), 
   radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
   width: 100%;
   height: 20rem;
@@ -66,13 +64,10 @@ p {
   border-radius: 1rem;		
 }
 
-.separador-orientacao {
-	padding: 0px;
-  margin: 0px 0px 2rem;
-  width: 100%;
-  display: flex;
-  -webkit-box-pack: top;
-  justify-content: top;
+.separador-definicao {
+	padding: 0;
+  margin: 2rem 0 2rem 0; 
+  display: flex; 
 }
 
 svg {
@@ -210,7 +205,7 @@ header {
   -webkit-box-pack: center;
   justify-content: center;
   padding: 0px 1.5rem;   
-  margin-top: -2rem;  
+  margin-top: 2rem;  
   width: 100%;    
 	color: var(--cor-preto-principal);		
 }
@@ -219,10 +214,11 @@ header {
 	max-width: 40rem;
 	margin-top: 1.5rem;
   margin-bottom: 4rem;
-  margin-left: 12rem;
+  margin-left: 14rem;
 	text-align: left;
 	font-weight: 200;
 	font-size: 20px;
+  line-height: 1.5rem;
 }
 
 /*CONHECIMENTOS*/
@@ -263,7 +259,7 @@ header {
   animation-delay: .4s;
 }
 
-.cards-conhecimentos:-child(4) {
+.cards-conhecimentos:nth-child(4) {
   animation-delay: .6s;
 }
 
