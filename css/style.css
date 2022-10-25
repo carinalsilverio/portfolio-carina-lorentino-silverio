@@ -210,7 +210,7 @@ header {
   width: 100%;
   height: 100%;    
 	color: var(--cor-preto-principal);		
-  background-image:  var(--cor-roxo-primario), url(/src/img/banner.png);
+  background-image:  var(--cor-roxo-primario), url("/src/img/banner.png");
   opacity: 0.8;
   background-repeat: no-repeat;
   background-size: cover; 
