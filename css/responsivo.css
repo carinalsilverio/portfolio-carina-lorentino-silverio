@@ -7,8 +7,7 @@
   }
   #logo img {   
     width: 60px;
-    height: 70px;
-    
+    height: 70px;    
   }
   svg {     
     max-width: 24.3rem;
@@ -27,8 +26,8 @@
 }
   .separador {
     height: 38rem;
-    margin-top: 5rem;    
-}
+    margin-top: 5rem;   
+  }
 
 /*CONHECIMENTOS*/
 .conhecimentos img {
@@ -44,14 +43,15 @@
   margin:0 50rem 0 0;
 }
 .item {
-  opacity: 1;
+  width: 20rem;
+  height: 20rem;
 }
 .current-item {  
   border: none; 
 }
 .projetos {
   padding: 15px 22px 15px 15px;
-  max-width: 640px;
+  max-width: 90%;
 }
 .arrow-left {
 left: -0.5rem;
@@ -64,7 +64,7 @@ left: -0.5rem;
 #header {
   box-sizing: border-box;
   height: 130px;
-  padding: 1rem;
+  /* padding: 1rem; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,21 +74,25 @@ left: -0.5rem;
     list-style: none;
     gap: 0.5rem;
     position: absolute;
-    width: 100%;
-    top: 70px;
+    width: 100%;   
     right: 0px;   
     transition: 0.6s;
-    z-index: 1000;
+    z-index: 1;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
   }
   #nav.active #menu {
-    height: calc(41vh - 70px);
+    height: auto;
     visibility: visible;
-    overflow-y: auto;
-    background: rgb(21, 22, 27);       
-  }
+    overflow-y: hidden;
+    padding-bottom: 3.8rem;
+    background-color: var(--cor-preto-principal);
+    /* margin-top: auto; */
+    transition: 0.6s;
+    right: -2rem;
+}
+  
   .nav-bar ul{
     margin-right: 2rem;
   }
@@ -98,10 +102,9 @@ left: -0.5rem;
   #menu a {
     display: block;   
     padding: 1rem 0;   
-    margin: 0 3rem;   
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    margin: 0 3rem;      
     color: #e7e7e7;    
-    border-bottom: 1px solid rgb(50, 33, 78);
+    border-bottom: 1px solid var(--cor-roxo-principal);
   }
   #btn-mobile {
     display: flex;
@@ -145,6 +148,7 @@ left: -0.5rem;
     margin-right: auto;  
   }
 }
+
 
 @media (max-width: 360px){
   /*MENU*/

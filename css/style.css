@@ -135,12 +135,14 @@ header {
 }
 #header {
   box-sizing: border-box;
-  height: 140px;
+  height: 6.25rem;
   width: 100%;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;  
+  background-color: var(--cor-preto-principal);
+  color: var(--cor-texto); 
 }
 
 #logo {  
@@ -159,12 +161,12 @@ header {
   display: block;
 	text-decoration: none;
   padding: 20px;
-  color: rgb(255, 255, 255);
+  color: var(--cor-texto);
   font-weight: 800;
   transition: color 0.2s ease-out 0s;
   font-size: 18px;
   text-decoration: none; 
-  transition: background .4s;
+  transition: background .4s;  
 }
 
 #menu li {
@@ -185,11 +187,11 @@ header {
 }
 
 /*DIVISOR - INICIAL*/
-.span-divisor-inicial {
+/* .span-divisor-inicial {
   clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px)); 
   clip-path: polygon(0 0,100% 41px,100% 100%,0 100%);
   border-bottom: 40px solid var( --cor-roxo-principal) ;
-}
+} */
 
 /*SOBRE*/
 .foto-perfil {
@@ -204,10 +206,16 @@ header {
 	display: flex;
   -webkit-box-pack: center;
   justify-content: center;
-  padding: 0px 1.5rem;   
-  margin-top: 2rem;  
-  width: 100%;    
+  padding: 0px 1.5rem;  
+  width: 100%;
+  height: 100%;    
 	color: var(--cor-preto-principal);		
+  background-image:  var(--cor-roxo-primario), url(/src/img/banner.png);
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover; 
+   background-position: 50% 50%;
+
 }
 
 .principal p {
@@ -216,9 +224,9 @@ header {
   margin-bottom: 4rem;
   margin-left: 14rem;
 	text-align: left;
-	font-weight: 200;
-	font-size: 20px;
+	font-size: 20px;  
   line-height: 1.5rem;
+ 
 }
 
 /*CONHECIMENTOS*/
@@ -297,7 +305,7 @@ header {
   background-image: 
     radial-gradient(at 47% 33%, hsl(271.91, 99%, 54%) 0, transparent 59%), 
     radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
-  color:#ffffff;
+  color: var(--cor-texto);
   cursor: pointer;
 }
 
@@ -327,12 +335,14 @@ header {
   max-width: 70%;
   margin: 0 auto;
   cursor: pointer;  
+  background-color: var(--cor-preto-principal);
+  box-shadow: 0 0.3em 1em #000;
   }
 
 .projetos-cards h2   {
   display: flex;
   justify-content:center;  
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   font-size: 18px;
 }
 .projetos-cards p   {
@@ -385,16 +395,18 @@ header {
 }
 
 .item {
-  width: 300px;
-  height: 200px;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 4px; 
   flex-shrink: 0;
   transition: all 600ms ease-in-out;
-  opacity: 0.5;
+  opacity: 0.5;  
+  
 }
 
-.current-item {
-  opacity: 1;
-  border: 4px solid var( --cor-roxo-principal);
+.current-item {  
+  opacity: 1;   
+  box-shadow: 0 0.3em 1em rgb(145, 22, 254); 
 }
 
 /* This is from w3schools */
@@ -411,30 +423,39 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   scrollbar-width: none; /* Firefox */
 }
 /*DIVISOR - FINAL*/
-.span-divisor-final {
+/* .span-divisor-final {
   clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px)); 
   clip-path: polygon(0 0,100% 41px,100% 100%,0 100%);
   margin-top: 2rem; 
   border-bottom: 40px solid var( --cor-roxo-principal) ;
-}
+} */
 
 /*CONTATO*/
 
-.contatos {
-  padding: 2rem;      
+.contato {
+  background-color: var( --cor-roxo-principal);   
+  margin-top: 5rem;  
 }
+.contatos {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center; 
+  padding-bottom: 2rem; 
+}
+
 .contatos p  {
   margin-bottom: 0.5rem;
 }
 .contato-direto, .icones-redes-sociais {  
   display: flex;
-  padding: 0 2rem;
-  
+  justify-content:center;
+  align-items: center;  
+  padding-bottom: 1rem;  
 }
 
-.icones-contato-direto {
-  margin: 0.5rem 0;   
-  cursor: pointer;      
+.icones-contato-direto {  
+  cursor: pointer;       
   }
   
 .icones-contato-direto:hover {
@@ -452,10 +473,12 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   footer p { 
   display: flex;  
   height: 5rem;
+  font-size: 14px;
   color: var(--cor-texto);
-  margin-top: 2rem;
-  padding: 2rem;
+  background-color: var(--cor-preto-principal);
+  padding-top: 1rem;
   border-top: 1px solid var(  --cor-divisor-terciario);
   justify-content:center;
   }
 
+  

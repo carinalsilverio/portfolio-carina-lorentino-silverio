@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/responsivo.css">
   <link rel="stylesheet" href="css/menu-mobile.css">
   <link rel="stylesheet" href="css/variaveis.css">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,10 +42,10 @@
     </header>
   </section>
 
-  <div class="span-divisor-inicial"></div>
+  <!-- <div class="span-divisor-inicial"></div> -->
 
   <!--SOBRE-->
-  <main class="principal container">
+  <main class="principal">
     <div class="separador-definicao"></div>
     <span width="100%" class="separador"></span>
     <div id="sobre">
@@ -55,7 +55,7 @@
       </div>
       <p>Olá! <br>
         <br>Eu me chamo Carina, estou cursando o último período do curso de Análise e Desenvolvimento de Sistemas. <br>
-        <br>Sou programadora Front-end e tenho experiência em criação de páginas Web. Estou constantemente criando páginas web, afim de aplicar meus conhecimentos e aprender cada vez mais com novos desafios. Além do desenvolvimento profissional, procuro me desenvolver no âmbito pessoal buscando sempre mais conhecimentos.
+        <br>Sou programadora Front-end e tenho experiência em criação de páginas Web. Estou constantemente criando projetos, afim de aplicar meus conhecimentos e aprender cada vez mais com novos desafios. Além do desenvolvimento profissional, procuro me desenvolver no âmbito pessoal buscando sempre mais conhecimentos.
       </p>
     </div>
   </main>
@@ -112,8 +112,8 @@
   </section>
 
   <!--PROJETOS-->
-  <section class="container">
-    <div class="fonte-titulo" id="projetos">
+  <section class="container" data-anime="fade-right">
+    <div class="fonte-titulo">
       <h1>Projetos</h1>
     </div>
     <div class="projetos">
@@ -129,32 +129,43 @@
           <div class="projetos-cards">
             <h2>Animais Fantásticos</h2>
             <a href="https://carinalsilverio.github.io/animais-fantasticos/" target="_blank"><img src="src/img/animais-fantasticos.png" alt="imagem projeto Animais Fantásticos" class="item"></a>
-            <p>Projeto Realizado através da plataforma Origamid</p>
+            <p>Projeto realizado através da plataforma Origamid</p>
           </div>
           <div class="projetos-cards">
-            <h2>Bikraft</h2>
+            <h2>Bikcraft</h2>
             <a href="https://carinalsilverio.github.io/bikraft/" target="_blank"><img src="src/img/bikcraft.png" alt="imagem projeto Bikraft" class="item"></a>
-            <p>Projeto Realizado através da plataforma Origamid</p>
+            <p>Projeto realizado através da plataforma Origamid</p>
           </div>
           <div class="projetos-cards">
             <h2>Calculadora</h2>
             <a href="https://carinalsilverio.github.io/calculadora/" target="_blank"><img src="src/img/calc.png" alt="imagem projeto Calculadora" class="item"></a>
-            <p>Projeto Pessoal</p>
+            <p>Projeto realizado através de tutorial</p>
           </div>
+          <div class="projetos-cards">
+            <h2>Controle Financeiro</h2>
+            <a href="https://carinalsilverio.github.io/controlefinanceiro/" target="_blank"><img src="src/img/controle_financeiro.png" alt="imagem projeto Controle Financeiro" class="item"></a>
+            <p>Projeto realizado através de tutorial</p>
+          </div>
+          <div class="projetos-cards">
+            <h2>Condições Climáticas</h2>
+            <a href="https://carinalsilverio.github.io/clima/" target="_blank"><img src="src/img/clima.png" alt="imagem projeto Condições Climáticas" class="item"></a>
+            <p>Projeto realizado através de tutorial</p>
+          </div>
+
           <div class="projetos-cards">
             <h2>Fruto e Fruta</h2>
             <a href="https://carinalsilverio.github.io/fruta-fruto/" target="_blank"><img src="src/img/fruta_e_fruto.png" alt="imagem projeto Fruta e Fruto" class="item"></a>
-            <p>Projeto Realizado através da plataforma Alura</p>
+            <p>Projeto realizado através da plataforma Alura</p>
           </div>
           <div class="projetos-cards">
             <h2>Cronômetro</h2>
             <a href="https://carinalsilverio.github.io/cronometro/" target="_blank"><img src="src/img/cronometro.png" alt="imagem projeto Cronômetro" class="item"></a>
-            <p>Projeto Pessoal</p>
+            <p>Projeto realizado através de tutorial</p>
           </div>
           <div class="projetos-cards">
             <h2>Burger King</h2>
             <a href="https://carinalsilverio.github.io/projetobk/" target="_blank"> <img src="src/img/bk.png" alt="imagem projeto Burger King" class="item"></a>
-            <p>Projeto Realizado através da plataforma Kenzie</p>
+            <p>Projeto realizado durante programa Kenzie</p>
           </div>
           <div class="projetos-cards">
             <h2>Tecme - Clone</h2>
@@ -164,17 +175,17 @@
           <div class="projetos-cards">
             <h2>Seletor de Personagens</h2>
             <a href="https://carinalsilverio.github.io/selecao-personagens/" target="_blank"><img src="src/img/seletor_personagens.png" alt="imagem projeto Seletor de Personagens" class="item"></a>
-            <p>Projeto Pessoal</p>
+            <p>Projeto realizado durante programa Dev em Dobro</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="span-divisor-final"></div>
+  <!-- <div class="span-divisor-final"></div> -->
 
   <!--CONTATO-->
-  <section class="container contato">
+  <section class="contato">
     <div>
       <div class="fonte-titulo" id="contato">
         <h1>Contato</h1>
@@ -185,10 +196,10 @@
         <p>e-mail: carinalsilverio@gmail.com</p>
         <address>Florianópolis-SC</address>
       </div>
-      <div class="contato-direto">
+      <div class="contato-direto container">
         <h2>Contato Direto</h2>
       </div>
-      <div class="icones-redes-sociais">
+      <div class="icones-redes-sociais container">
         <div class="icones-contato-direto">
           <a href="http://api.whatsapp.com/send?phone=5548999215378" target="_blank"><img src="src/redes/whatsapp1.png" width="40px" height="40px" alt="whatsapp"></a>
         </div>
@@ -201,7 +212,7 @@
       </div>
     </div>
   </section>
-  <section class="container">
+  <section>
     <!--RODAPÉ-->
     <div>
       <footer>
@@ -210,6 +221,12 @@
     </div>
   </section>
   <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
 </body>
 
 </html>
