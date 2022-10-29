@@ -15,7 +15,7 @@
   .foto-perfil {
     border-radius: 50%;
     display: flex;
-    margin: 6rem auto 0; 
+    margin: 8rem auto 0 auto;
     position: relative; 
     width: 130px;
     height: 130px; 
@@ -53,11 +53,17 @@
   padding: 15px 22px 15px 15px;
   max-width: 90%;
 }
+
+.arrow-left,
+.arrow-right {
+  opacity: 1;
+}
+
 .arrow-left {
 left: -0.5rem;
 }
 .arrow-right {
-  right: 0.5rem;
+  right: 0.2rem;
   }
 
 /*MENU MOBILE*/

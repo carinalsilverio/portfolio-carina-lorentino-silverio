@@ -194,11 +194,15 @@ header {
 } */
 
 /*SOBRE*/
+
+#sobre {
+  margin-top: 0;
+}
 .foto-perfil {
   border-radius: 50%;
   display: block;
   position: absolute;
-  margin-top: 10rem;   
+  margin: 10rem auto 0 auto;   
   box-shadow: 5px 8px 8px var(--cor-preto-principal);
 }
 
@@ -206,22 +210,21 @@ header {
 	display: flex;
   -webkit-box-pack: center;
   justify-content: center;
-  padding: 0px 1.5rem;  
+  padding: 0 1.5rem;  
   width: 100%;
   height: 100%;    
 	color: var(--cor-preto-principal);		
-  background-image:  var(--cor-roxo-primario), url("../src/img/banner.png");
+  background-image: var(--cor-roxo-primario), url("../src/img/banner.png");
   opacity: 0.8;
   background-repeat: no-repeat;
   background-size: cover; 
-  background-position: 50% 50%;
-
+  background-position: 100%;
 }
 
 .principal p {
 	max-width: 40rem;
-	margin-top: 1.5rem;
-  margin-bottom: 4rem;
+	/* margin-top: 1.5rem; */
+  margin-bottom: 1rem;
   margin-left: 14rem;
 	text-align: left;
 	font-size: 20px;  
@@ -239,9 +242,9 @@ header {
   margin-bottom: 4rem;
 	text-align: left;
 	font-weight: 200;
-	font-size: 20px; 
-  
+	font-size: 20px;   
 }
+
 .cards-conhecimentos{
   animation: flutuar 3s linear infinite;  
 }
