@@ -15,18 +15,19 @@
   .foto-perfil {
     border-radius: 50%;
     display: flex;
-    margin: 8rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     position: relative; 
     width: 130px;
     height: 130px; 
   }
   /*SOBRE*/
+  
 .principal p {	
   margin-left: 0rem;	
 }
   .separador {
-    height: 38rem;
-    margin-top: 5rem;   
+    height: 35rem;
+    margin-top: 10rem;   
   }
 
 /*CONHECIMENTOS*/
